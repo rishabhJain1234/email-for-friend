@@ -50,11 +50,11 @@ Priya Rajput
 3rd floor, Awfis, Tower B, Prestige Shantiniketan Commercial, Whitefield, Bangalore-560066
     '''
 def send_email(email_id, actual_email, subject):
-            # sender_email = st.secrets["EMAIL"]
-            # sender_password = st.secrets["PASSWORD"]
+            sender_email = st.secrets["EMAIL"]
+            sender_password = st.secrets["PASSWORD"]
             
-            sender_email = os.getenv("EMAIL")
-            sender_password = os.getenv("PASSWORD")
+            # sender_email = os.getenv("EMAIL")
+            # sender_password = os.getenv("PASSWORD")
 
             msg = MIMEMultipart()
             msg['From'] = sender_email
